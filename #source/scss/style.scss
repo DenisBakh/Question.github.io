@@ -1,0 +1,359 @@
+@font-face {
+  font-family: 'fontawesome';
+  src: url('../../fonts/fontawesome-webfont.eot');
+  src: local('☺'), url('../../fonts/fontawesome-webfont.woff') format('woff'), url('../../fonts/fontawesome-webfont.ttf') format('truetype'), url('../../fonts/fontawesome-webfont.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../../fonts/Montserrat.eot');
+  src: local('☺'), url('../../fonts/Montserrat.woff') format('woff'), url('../../fonts/Montserrat.ttf') format('truetype'), url('../../fonts/Montserrat.svg') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../../fonts/Montserrat-Bold.eot');
+  src: local('☺'), url('../../fonts/Montserrat-Bold.woff') format('woff'), url('../../fonts/Montserrat-Bold.ttf') format('truetype'), url('../../fonts/Montserrat-Bold.svg') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../../fonts/Montserrat-Light.eot');
+  src: local('☺'), url('../../fonts/Montserrat-Light.woff') format('woff'), url('../../fonts/Montserrat-Light.ttf') format('truetype'), url('../../fonts/Montserrat-Light.svg') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MyriadPro';
+  src: url('../../fonts/MyriadPro-Regular.eot');
+  src: local('☺'), url('../../fonts/MyriadPro-Regular.woff') format('woff'), url('../../fonts/MyriadPro-Regular.ttf') format('truetype'), url('../../fonts/MyriadPro-Regular.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNova';
+  src: url('../../fonts/Mark Simonson - Proxima Nova Bold.eot');
+  src: local('☺'), url('../../fonts/Mark Simonson - Proxima Nova Bold.woff') format('woff'), url('../../fonts/Mark Simonson - Proxima Nova Bold.ttf') format('truetype'), url('../../fonts/Mark Simonson - Proxima Nova Bold.svg') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNova';
+  src: url('../../fonts/Mark Simonson - Proxima Nova Light.eot');
+  src: local('☺'), url('../../fonts/Mark Simonson - Proxima Nova Light.woff') format('woff'), url('../../fonts/Mark Simonson - Proxima Nova Light.ttf') format('truetype'), url('../../fonts/Mark Simonson - Proxima Nova Light.svg') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('../../fonts/Roboto-Regular.eot');
+  src: local('☺'), url('../../fonts/Roboto-Regular.woff') format('woff'), url('../../fonts/Roboto-Regular.ttf') format('truetype'), url('../../fonts/Roboto-Regular.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+.container-max {
+  padding: 0 30px;
+}
+@media (max-width: 600px) {
+  .container-max {
+    padding: 0 5px;
+  }
+}
+
+.container {
+	max-width: 1780px;
+	margin: 0 auto;
+	&-header__top {
+		max-width: 1170px;
+  		margin: 0 auto;
+	}
+}
+
+body {
+  font-family: 'Montserrat';
+  font-weight: 400;
+}
+
+.ibg {
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+}
+.ibg img {
+  display: none;
+}
+
+/*=============HEADER-TOP=============================================*/
+.header {
+  &__top {
+  }
+}
+.top-header {
+	background-color: #333333;
+  &__row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	line-height: 42px;
+  }
+  &__column {
+  }
+  &__currency {
+	color: #6b6b6b;
+	font-size: 13px;
+  }
+  &__right {
+  	display: flex;
+  }
+  &__reg {
+	display: block;
+	color: #999999;
+	font-size: 13px;
+	margin: 0 35px 0 0;
+  }
+  &__sign {
+	display: block;
+	color: #999999;
+	font-size: 13px;
+	margin: 0 82px 0 0;
+  }
+  &__bascket {
+	color: #ffffff;
+	font-size: 13px;
+	width: 147px;
+	height: 44px;
+	background-color: #00c8c8;
+	text-align: center;
+	position: relative;
+	padding: 0 0 0 40px;
+	&:after {
+		display: block;
+		content: "";
+		position: absolute;
+		width: 20px;height:17px;
+		top: calc(50% - 8.5px);left: 22px;
+		background: url("../../img/header/cart.png") no-repeat;
+	}
+  }
+}
+
+/*=============HEADER-MIDDLE=============================================*/
+
+.middle-header {
+	padding: 40px 0 40px 0;
+	background-color: #f8f8f8;
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+	&__column {
+		&.m {
+			//flex: 0 1 50%;
+		}
+	}
+	&__title {
+		color: #222222;
+		font-size: 24px;
+		text-transform: uppercase;
+		font-weight: 400;
+		letter-spacing: 1.2px;
+		line-height: 14px;
+		span {
+			font-weight: 700;
+		}
+	}
+	&__right {
+		display: flex;
+	}
+	&__menu {	
+		//flex: 0 0 auto;
+		flex-grow: 0;
+		flex-shrink: 0;
+		margin: 0 115px 0 0;	
+	}
+	&__list {
+		display: flex;
+		align-items: center;
+	}
+	&__item {
+		margin: 0 57px 0 0;
+		padding: 0 0 14px 0;
+		position: relative;
+		transition:all 0.4s ease;
+		&:after {
+			content: "";
+			display: block;
+			position: absolute;
+			width: 8px;height:5px;
+			bottom: 0;left: 0;
+			background: url("../../img/header/arrow.png") no-repeat;
+		}
+		&:nth-child(3) {
+			&:after {
+				display: none;
+			}
+		}
+		&:last-child {
+			margin: 0 0 0 0;
+		}
+		&:hover {
+			.submenu-header {
+				display: block;
+			}
+			&:after {
+				background: url("../../img/header/arrow_hover.png") no-repeat;
+			}
+			.middle-header__link {
+				color: #00c8c8;
+			}
+		}
+	}
+	&__link {
+		color: #222222;
+		font-size: 13px;
+		line-height: 20px;
+		text-transform: uppercase;
+		&:hover {
+			color: #00c8c8;
+		}
+	}
+	&__search {
+	}
+}
+
+
+.search {
+	margin: -3px 0 0 0;
+	flex-shrink: 1;
+	flex-grow: 0;
+
+	min-width: 1px;
+	width: 220px;
+	
+	height: 30px;
+	
+	border: 1px solid black;
+
+
+
+	&__body {
+	width: 100%;
+	height: 100%;
+	border: 1px solid red;
+	
+	}
+	&__form {
+
+		position: relative;
+
+		width: 100%;
+	height: 100%;
+	border: 1px solid green;
+
+	}
+	&__input {
+		width: 100%;
+	height: 100%;
+	border: 1px solid blue;
+
+		//min-width: 10px;
+		//padding: 10px 20px 10px 10px;
+		//width: 190px;
+
+		//height: 30px;
+		//border: 1px solid #e7e7e7;
+		//background-color: #f8f8f8;
+		&[placeholder] {
+			font-family: 'Montserrat';
+			color: #989898;
+			font-size: 13px;
+			font-weight: 300;
+			line-height: 27px;
+		}
+	}
+	&__btn {
+		position: absolute;
+		height:15px;
+		width: 13px;
+		top: 50%;
+		transform: translate3d(0,-50%,0);
+		right: 11px;
+		background: url("../../img/header/search_icon.png") no-repeat;
+		z-index: 1;
+		cursor: pointer;
+	}
+}
+
+.smth {
+	flex: 0 1 90px;
+	
+	height: 30px;
+	border: 1px solid black;
+}
+
+.submenu-header {
+	display: none;
+	position: absolute;
+	top: 100%;left: -5px;
+	padding: 20px 0 0 0;
+	
+	&__body {
+		display: flex;
+		flex-direction: column;
+		width: 467px;
+		height: 527px;
+		box-shadow: 0 17px 24px rgba(0, 0, 0, 0.14);
+		background-color: #f8f8f8;
+		padding: 25px 30px 30px 30px;
+	}
+	&__row {
+		flex: 1 1 auto;
+		display: flex;
+	}
+	&__column {
+		margin: 0 84px 0 0;
+		&:last-child {
+			margin: 0 0 0 0;
+		}
+	}
+	&__title {
+		color: #575153;
+		font-size: 12px;
+		line-height: 20px;
+		text-transform: uppercase;
+		margin: 0 0 18px 0;
+	}
+	&__list {
+	}
+	&__item {
+	}
+	&__link {
+		color: #727272;
+		font-size: 14px;
+		font-weight: 300;
+		line-height: 30px;
+	}
+	&__offer {
+		background-color: #333333;
+		padding: 53px 0 53px 55px;
+		text-transform: uppercase;
+		letter-spacing: 1.8px;
+		line-height: 48px;
+		font-size: 36px;
+		color: #ffffff;
+		span {
+			letter-spacing: 1.3px;
+			font-weight: 700;
+		}
+	}
+}
+
